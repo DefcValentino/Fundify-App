@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Noto+Sans+Georgian:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary-black:rgba(20, 20, 20, 1);
+    --background-white:rgba(244, 241, 235, 1);
+    --gold:rgba(208, 179, 128, 1);
+    --grey-background:rgba(244, 241, 235, 1);
+    --light-grey:rgba(34, 33, 33, 0.2);
+}
+
+.clickbutton{
+    padding: 1rem 5rem;
+    border-radius: 1rem;
+    color: var(--primary-black);
+    font-size: clamp(10px,4vw, 16px);
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: 0.5s ease-in-out;
+ }
+
+ 
+/* *******ACCOUNT SECTION STYLE******* */
+#account{
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-black);
+    color: var(--background-white);
+}
+
+.account-container{
+    width: clamp(200px, 100%, 600px );
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 0 5px 1px rgba(244, 241, 235, 0.1);
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center
+
+}
+
+.content-top{
+    display: flex;
+    gap: 4rem;
+    padding-bottom: 4rem;
+}
+
+#backBtn{
+    cursor: pointer;
+}
+
+.content-top .h1{
+    font-size: clamp(10px, 4vw, 20px);
+    font-weight: 300;
+    color: var(--background-white);
+}
+
+.content form{
+    width: clamp(200px, 100%, 600px);
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+ 
+.content input{
+    width: 100%;
+    padding: 1rem 8rem;
+    text-align: center;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    background-color:rgb(34, 33, 33);
+    color: var(--background-white);
+}
+
+.hidden{
+    display: none;
+}
+
+.search-results {
+    width: clamp(200px, 100%, 550px);
+    border: 1px solid #ccc;
+    position: absolute;
+    max-height: 150px;
+    /* overflow-y: auto; */
+    background-color:var(--background-white);
+    z-index: 10;
+    color: var(--primary-black);
+    border-radius: 10px;
+}
+
+.search-result-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search-result-item:hover {
+    background-color: #cbecf1;
+}
+
+.account-name{
+    display: flex;
+    justify-content: space-between;
+    gap: 12rem;
+    padding-bottom: 2rem;
+}
+
+.name{
+    font-size: clamp(10px, 4vw, 12px);
+    color: rgb(136, 136, 132);
+}
+
+#confirmBtn{
+    width: clamp(100px, 100%, 800px);
+    margin-top: 10rem;
+}
+
+#confirmBtn:hover{
+    background-color: var(--gold);
+}
+
+.bottom-nav{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    justify-content: center;
+    text-align: center;
+    width: clamp(200px, 100%, 600px);
+    padding: 2rem 0;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.bottom-nav, .coin img, .transfericon img,
+ .homeicon img, .walleticon img, .walleticon img, 
+ .seticon{
+    width:100%px ;
+}
+
+
+@media screen and (max-width:700px) {
+    .account-name{
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .bottom-nav{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        justify-content: center;
+        text-align: center;
+        width: clamp(200px, 100%, 600px);
+        padding: 2rem 0;
+        margin: 0 auto;
+    }
+    
+   
+}
+
+

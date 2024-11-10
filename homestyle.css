@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Noto+Sans+Georgian:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+:root{
+    --primary-black:rgba(20, 20, 20, 1);
+    --background-white:rgba(244, 241, 235, 1);
+    --gold:rgba(208, 179, 128, 1);
+    --grey-background:rgba(244, 241, 235, 1);
+    --light-grey:rgba(34, 33, 33, 0.2);
+}
+
+
+/* *******COMMON STYLE******* */
+/* container */
+
+
+/* *******ONBOARD SECTION STYLE******* */
+#home{
+    width: 100%;
+    height: 100%;
+    /* padding: 2rem 0; */
+    background-color: var(--primary-black);
+    color: var(--background-white);
+}
+
+.home-container{
+    width: clamp(250px, 100%, 600px);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0 0 8px 1px rgba(244, 241, 235, 0.1);
+    padding: 0 1rem;
+}
+
+.dash-top{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 1rem;
+    justify-content: center;
+    margin: 0 auto;
+    background-color:  var(--background-white);
+}
+
+.dash-top .profile{
+     width: clamp(50px, 100%, 100px);
+} 
+
+.profile img{
+   width: 100%;
+}
+
+.dash-top .middle-text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    justify-content: center;
+    background-color: rgb(231, 224, 210);
+    min-height: 50px;
+    border-radius: 5rem;
+    font-size: clamp(10px, 5vw, 16px);
+}
+
+.middle-para{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-black);
+    font-size: clamp(10px, 4vw, 20px);
+}
+
+.side-circle{
+    width: clamp(30px, 100%, 50px);
+    background-color: rgb(231, 224, 210);
+    border-radius: 25rem;
+    min-height: 30px;
+    position: relative;
+}
+
+.side-circle img{
+    width: 100%;
+}
+
+.smallcircle{
+    width: 9px;
+    height: 9px;
+    background-color: var(--gold);
+    position: absolute;
+    top: 2rem;
+    right: -4px;
+    border-radius: 5rem;
+}
+
+.account-container{
+    display: flex;
+    flex-direction: column;
+    width: clamp(300px, 100%, 500px);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.account-container .accntbal-wrap{
+    background-color: rgb(33, 33, 34) ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: -3rem 0;
+}
+
+.amount-text{
+    font-size: clamp(10px, 4vw, 18px);
+}
+
+.amount{
+    font-size: clamp(10px, 4vw, 35px);
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+.wallet, .reward{
+    display: flex;
+    align-items: center;
+    font-size: clamp(9px, 4vw, 18px);
+    color: var(--background-white);
+    cursor: pointer;
+}
+
+.wallet .arrow, .reward .arrow{
+  font-size: 25px;
+  padding-left: 0.5rem;
+}
+
+.points{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.description{
+    width: 100%;
+    display: flex;
+    background-color:var(--background-white) ;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1.5em auto;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    color: var(--primary-black);
+    gap: 10px;
+}
+
+.top-up ,.Transfer, .more{
+    display: flex;
+    cursor: pointer;
+}
+
+
+.transaction-container{
+    display: flex;
+    flex-direction: column;
+    width: clamp(200px, 100%, 500px);
+    align-items: center;
+    margin:0 auto;
+    padding: 0 1rem;
+}
+
+.transact-head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: clamp(10px, 4vw, 20px);
+}
+
+.transact-detail{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.inner-detail.left{
+    display: flex;
+    padding-right: 8.5rem;
+   
+}
+
+.inner-detail.left img{
+    width: 20px;
+    padding-right: 5px;
+}
+
+.detail-name{
+    font-size: clamp(9px, 4vw, 14px) ;
+    font-weight: 300;
+}
+
+.detail-status{
+    font-size: clamp(9px, 4vw, 10px) ;
+    font-weight: 200;
+    color: rgb(155, 155, 156);
+}
+
+.bottom-nav{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    justify-content: center;
+    text-align: center;
+   
+    padding: 2rem 0;
+    cursor: pointer;
+}
+
+.bottom-nav, .coin img, .transfericon img,
+ .homeicon img, .walleticon img, .walleticon img, 
+ .seticon{
+    width:30px ;
+
+}
+
+.walleticon img{
+    color: var(--background-white);
+}
+
+
+
+@media screen and (max-width:600px){
+
+    .bottom-nav{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        justify-content: center;
+        text-align: center;
+        /* width: clamp(200px, 100%, 400px); */
+        /* padding: 2rem 0; */
+        cursor: pointer;
+    }
+    
+    .bottom-nav, .coin img, .transfericon img,
+     .homeicon img, .walleticon img, .walleticon img, 
+     .seticon{
+        width:30px ;
+    }
+
+    .account-container{
+        display: flex;
+        flex-direction: column;
+        width: clamp(300px, 100%, 350px);
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .transaction-container{
+        width: clamp(200px, 100%, 350px);
+    }
+    
+}
+

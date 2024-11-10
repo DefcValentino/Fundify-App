@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Noto+Sans+Georgian:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--primary-black);
+}
+
+:root{
+    --primary-black:rgba(20, 20, 20, 1);
+    --background-white:rgba(244, 241, 235, 1);
+    --gold:rgba(208, 179, 128, 1);
+    --grey-background:rgba(244, 241, 235, 1);
+}
+
+
+/* *******COMMON STYLE******* */
+/* container */
+.onboard-container{
+    width: clamp(250px, 100%, 600px);
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px 0 ;
+    box-shadow: 0 0 5px 0.5px rgba(244, 241, 235, 0.1);
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.right-container{
+    position: absolute;
+    top: 22rem; 
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/* Button */
+.right-container .clickbutton{
+    padding: 1rem 5rem;
+    border-radius: 1rem;
+    color: var(--primary-black);
+    font-size: clamp(10px,4vw, 16px);
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: 0.5s ease-in-out;
+ }
+ 
+ .right-container .clickbutton:hover{
+     background-color: var(--gold);
+ }
+ 
+ /* hr */
+ .hr-div{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    width: clamp(80px, 100%, 600px);
+    padding:4px 80px 3px ;
+    margin: 0 auto;
+}
+
+.divone, .divtwo, .divthree{
+    background-color: white;
+    width: 100%;
+    min-height: 4px;
+    border-radius: 10px;
+}
+
+.divone {
+    background-color: var(--gold);
+}
+
+
+
+
+/* *******ONBOARD SECTION STYLE******* */
+#onboard-one{
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-black);
+}
+
+
+.icon{
+    width: clamp(10px, 100%, 25px);
+    min-height: 30px;
+    padding: 15px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.icon img{
+    width: 100%;
+}
+
+.left-container{
+    width: clamp(400px, 100%, 600px);
+    min-height: 300px;
+}
+
+.reward-image{
+    width:100%;
+    position: relative;
+}
+
+.right-container{
+    display: flex;
+    flex-direction: column;
+    width: clamp(200px, 100%, 600px);
+    min-height: 300px;
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(20, 20, 20, 0.9), rgba(20, 20, 20, 1));
+    padding: 4rem 2rem 2rem;
+    left: 0;
+}
+
+.right-container .h1{
+    font-size: clamp(16px, 4vw, 30px);
+    font-weight: 600;
+}
+
+.right-container .h1text{
+    font-size: clamp(10px, 4vw, 16px);
+    font-weight: 300;
+    padding: 2rem 0 2rem;
+}
+
+/* **************MOBILE DEVICE************** */
+@media screen and (max-width:678px) {
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+
+    .right-container{
+        position: absolute;
+        top: 22rem; 
+        right: 0;
+        bottom: 0;
+        text-align: center;
+    }
+}

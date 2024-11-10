@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send</title>
+    <link rel="stylesheet" href="send.css">
+</head>
+
+<body>
+    <section id="send">
+        <div class="send-container">
+            <article class="content">
+                <div class="intent">
+                    <img id="backBtn"  src="./images/backwardarrow.svg">
+                    <p class="h1">Send to Fundify Account</p>
+                </div>
+
+                <div ud="selectedAccountContainer" class="intent-name">
+                    <!-- The account name will be dynamically filled -->
+                    <p id="selectedUsername" >To: </p>
+                    <!-- <p id="selectedUserTag" class="name">N</p> -->
+                </div>
+
+                <div class="balance">
+                  <p>Wallet Balance:</p>
+                  <p><img src="./images/currencyicon.svg">25,000.40</p>
+                </div>
+
+                    <form class="currency-form">
+                        <p><img src="./images/currencyicon.svg"></p>
+                        <input id="amount-input" class="" type="text" placeholder="enter amount">
+                    </form>
+    
+                <p class="fee">+200 Transfer Fee</p>
+
+                <form>
+                    <input id="comment-input" type="text" placeholder="comment(Optional)">
+                </form>
+                <p id="errorMessage" style="color: red; display: none;">Please enter amount!!</p>
+
+                <button id="sendBtn" class="clickbutton" type="submit">Confirm</button>
+
+                <div class="bottom-nav">
+                    <div class="coin">
+                        <img src="./images/coinicon.svg">
+                    </div>
+                    
+                    <div class="transfericon">
+                        <img src="./images/transfericon.svg">
+                    </div>
+                   
+                    <div id="homeBtn" class="homeicon">
+                        <img src="./images/homebutton.svg">
+                        <p>Home</p>
+                    </div>
+                   
+                    <div class="walleticon">
+                        <img src="./images/creddit card.svg">
+                    </div>
+                   
+                    <div class="seticon">
+                        <img src="./images/settings.svg">
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <script src="send.js"></script>
+</body>
+</html>

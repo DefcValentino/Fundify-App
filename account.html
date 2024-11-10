@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="account.css">
+</head>
+
+<body>
+    <section id="account">
+        <div class="account-container">
+            <article class="content">
+                <div class="content-top">
+                    <img id="backBtn" src="./images/backwardarrow.svg">
+                    <p class="h1">Send to Fundify Account</p>
+                </div>
+
+               <!-- Form with Searchable Account Name Input -->
+               <form>
+                <input type="text" id="accountInput" placeholder="Search account name" required>
+                
+                <!-- Search Results Display -->
+                <div id="searchResults" class="search-results hidden"></div>
+               </form>
+
+               <!-- Selected Account Display -->
+               <div id="selectedAccount" class="account-name hidden">
+                <div class="user-detail">
+                    <p id="displayUserName" class="user-name"></p>
+                    <p id="displayUserTag" class="name"></p>
+                </div>
+                <p><img src="./images/minicoin.svg"><span id="displayPoints"></span> Points</p>
+               </div>
+
+               
+                <button id="confirmBtn" class="clickbutton" type="submit">Confirm</button>
+        
+
+                <div class="bottom-nav">
+                    <div class="coin">
+                        <img src="./images/coinicon.svg">
+                    </div>
+                    
+                    <div class="transfericon">
+                        <img src="./images/transfericon.svg">
+                    </div>
+                   
+                    <div id="homeBtn" class="homeicon">
+                        <img src="./images/homebutton.svg">
+                        <p>Home</p>
+                    </div>
+                   
+                    <div class="walleticon">
+                        <img src="./images/creddit card.svg">
+                    </div>
+                   
+                    <div class="seticon">
+                        <img src="./images/settings.svg">
+                    </div>
+                 </div>
+            </article>
+        </div>
+    </section>
+
+    <script src="account.js"></script>
+</body>
+</html>

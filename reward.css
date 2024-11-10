@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Noto+Sans+Georgian:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary-black:rgba(20, 20, 20, 1);
+    --background-white:rgba(244, 241, 235, 1);
+    --gold:rgba(208, 179, 128, 1);
+    --grey-background:rgba(244, 241, 235, 1);
+    --light-grey:rgba(34, 33, 33, 0.3);
+    --smooth-grey:rgba(244, 241, 235, 0.5);
+}
+
+
+/* ********REWARD SECTION STYLE******** */
+#reward{
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-black);
+    color: var(--background-white);
+}
+
+.reward-container{
+    width: clamp(200px,100%,600px ) ;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 8px 1px rgba(244, 241, 235, 0.1);
+    padding: 2rem ;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .h1{
+    font-size: clamp(10px, 4vw, 25px);
+}
+
+.amount{
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.reward-container article{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem ;
+    background-color: var(--light-grey);
+    margin: 1rem 0 1rem;
+    border-radius: 1rem;
+}
+
+.voucherdiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+.point{
+    padding-top: 1rem;
+    color: rgba(244, 241, 235, 0.5);
+}
+
+.redeemBtn{
+    background-color: var(--background-white);
+    color: var(--primary-black);
+    padding: 0.5rem;
+    text-align: center;
+    margin: 1rem 0;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+.redeemBtn:hover{
+    background-color: var(--gold);
+}
+
+.bottom-nav{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    justify-content: center;
+    text-align: center;
+    width: clamp(200px, 100%, 600px);
+    padding: 2rem 0;
+    margin: 0 auto;
+    cursor: pointer;
+    color: var(--background-white);
+}
+
+.bottom-nav, .coin img, .transfericon img,
+ .homeicon img, .walleticon img, .walleticon img, 
+ .seticon{
+    width:100%px ;
+}
+
+
+@media screen and (max-width:700px) {
+    .bottom-nav{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        justify-content: center;
+        text-align: center;
+        width: clamp(100px, 100%, 600px);
+        padding: 2rem 0;
+        margin: 0 auto;
+        color: var(--background-white);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
