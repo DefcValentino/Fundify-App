@@ -29,7 +29,7 @@ html{
 .success-container{
     width: clamp(200px, 100%, 600px);
     text-align: center;
-    padding: 4rem 0 15rem;
+    padding: 4rem 0 18rem;
     color: var(--background-white);
     box-shadow: 0 0 8px 1px rgba(244, 241, 235, 0.1);
     margin: 0 auto;
