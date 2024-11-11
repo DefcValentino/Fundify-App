@@ -95,6 +95,7 @@ html{
         padding: 2rem 0;
         margin: 1.5rem auto;
         color: var(--background-white);
+        bottom: 0;
     }
 }
 
