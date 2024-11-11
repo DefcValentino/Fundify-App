@@ -4,10 +4,12 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 html{
     font-family: 'Poppins', sans-serif;
+   background-color: var(--primary-black);
 }
 
 :root{
