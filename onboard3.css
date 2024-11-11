@@ -32,7 +32,7 @@ body{
     flex-direction:column;
     text-align: center;
     margin: 0 auto;
-    padding: 2rem 1rem ;
+    padding: 1.5rem 1rem 0 ;
     box-shadow: 0 0 5px 0.5px rgba(244, 241, 235, 0.1);
 }
 

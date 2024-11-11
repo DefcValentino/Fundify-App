@@ -68,6 +68,7 @@ body{
     transition: 0.5s ease-in-out;
  }
  
+
  .right-container .clickbutton:hover{
      background-color: var(--gold);
  }
@@ -93,8 +94,6 @@ body{
 .divone {
     background-color: var(--gold);
 }
-
-
 
 
 /* *******ONBOARD SECTION STYLE******* */

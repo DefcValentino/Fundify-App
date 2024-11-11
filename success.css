@@ -29,11 +29,12 @@ html{
 .success-container{
     width: clamp(200px, 100%, 600px);
     text-align: center;
-    padding: 4rem 0;
+    padding: 4rem 0 15rem;
     color: var(--background-white);
     box-shadow: 0 0 8px 1px rgba(244, 241, 235, 0.1);
     margin: 0 auto;
 }
+
 
 .close{
     font-size: clamp(12px, 4vw, 20px);
@@ -72,6 +73,9 @@ html{
     margin: 1.5rem auto;
     cursor: pointer;
     color: var(--background-white);
+    position: fixed;
+    bottom: 0;
+    background-color: var(--primary-black);
 }
 
 .bottom-nav, .coin img, .transfericon img,
