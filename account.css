@@ -8,6 +8,7 @@
 
 html{
     font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-black);
 }
 
 :root{
