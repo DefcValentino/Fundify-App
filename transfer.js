@@ -19,6 +19,10 @@ transferBTn.addEventListener('click', (e)=> {
     window.location.href = "account.html";
 });
 
+const redeemBtnBtn = document.getElementById('redeemBtn');
 
-fundifyBtn
+/// Navigate to reward page on button click
+redeemBtnBtn.addEventListener('click', (e) =>{
+    window.location.href = "reward.html"
+})
 

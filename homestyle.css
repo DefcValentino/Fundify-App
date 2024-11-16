@@ -195,6 +195,7 @@ html{
     display: flex;
     justify-content: space-between;
     padding-top: 2rem;
+    position: relative;
 }
 
 .inner-detail.left{
@@ -230,8 +231,14 @@ html{
     padding: 1rem 0;
     position: fixed;
     bottom: 0;
+    z-index: 50;
+}
+
+
+#redeemBtn, #homeBtn{
     cursor: pointer;
 }
+
 
 
 

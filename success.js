@@ -5,6 +5,14 @@ closeBtn.addEventListener('click', (e)=>{
     window.location.href = "home.html";
 })
 
+
+const redeemBtnBtn = document.getElementById('redeemBtn');
+
+/// Navigate to reward page on button click
+redeemBtnBtn.addEventListener('click', (e) =>{
+    window.location.href = "reward.html"
+})
+
 const transferDetails = JSON.parse(localStorage.getItem("transferDetails"));
 
 if (transferDetails) {

@@ -31,6 +31,7 @@ const searchResults = document.getElementById("searchResults");
 const selectedAccount = document.getElementById("selectedAccount");
 const confirmBtn = document.getElementById('confirmBtn');
 
+
 /// Event listener for input fields to filter accounts
 accountInput.addEventListener('input', function() {
     const query = accountInput.value.toLowerCase();
@@ -83,7 +84,6 @@ backBtn.addEventListener('click', (e) =>{
 })
 
 
-
 /// Navigate to home page on button click
 const homeBtn = document.getElementById('homeBtn');
 
@@ -91,6 +91,13 @@ homeBtn.addEventListener('click', (e) =>{
     window.location.href = "home.html"
 })
 
+
+const redeemBtnBtn = document.getElementById('redeemBtn');
+
+/// Navigate to reward page on button click
+redeemBtnBtn.addEventListener('click', (e) =>{
+    window.location.href = "reward.html"
+})
 
 
 /// Function to navigate to a new Page that has the account name
